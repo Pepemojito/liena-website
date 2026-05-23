@@ -24,25 +24,25 @@
             align-items:center;
             padding:20px;
             text-align:center;
-            position:relative;
         }
         .hero img{
-            width:90%;
-            max-width:1000px;
+            width:95%;
+            max-width:1100px;
             border-radius:20px;
-            box-shadow: 0 0 50px rgba(77,166,255,.5), 0 0 120px rgba(212,175,55,.25);
-            margin-bottom:35px;
+            box-shadow: 0 0 40px rgba(77,166,255,.6), 0 0 100px rgba(212,175,55,.3);
+            margin-bottom:30px;
         }
         .hero h1{
             font-family:'Cinzel', serif;
-            font-size:68px;
+            font-size:72px;
             color:#D4AF37;
-            margin-bottom:12px;
-            letter-spacing:4px;
+            margin-bottom:15px;
+            letter-spacing:3px;
+            text-shadow: 0 0 30px rgba(212,175,55,.5);
         }
         .hero p{
-            font-size:26px;
-            max-width:780px;
+            font-size:28px;
+            max-width:800px;
             color:#c8d4e8;
             line-height:1.4;
         }
@@ -55,47 +55,47 @@
             display:flex;
             flex-wrap:wrap;
             justify-content:center;
-            gap:10px;
-            background:rgba(7,20,38,0.9);
-            padding:10px 15px;
-            border-radius:50px;
-            backdrop-filter:blur(12px);
-            border:1px solid rgba(77,166,255,0.2);
+            gap:12px;
+            background:rgba(7,20,38,0.85);
+            padding:12px 18px;
+            border-radius:15px;
+            backdrop-filter:blur(10px);
         }
         .btn{
             color:#4da6ff;
-            padding:9px 16px;
+            padding:10px 20px;
             text-decoration:none;
             border:1px solid #4da6ff;
-            border-radius:50px;
-            font-weight:600;
+            border-radius:8px;
+            font-weight:bold;
             transition:all .3s ease;
-            font-size:13.5px;
-            white-space:nowrap;
+            font-size:14px;
         }
         .btn:hover{
             background:#4da6ff;
             color:white;
-            transform:translateY(-2px);
+            box-shadow:0 0 20px #4da6ff;
+            transform:translateY(-3px);
         }
+        /* Estilo especial para el botón X */
         .btn-x {
             background:#000;
             color:white;
-            border-color:#555;
+            border-color:#fff;
         }
         .btn-x:hover {
             background:#fff;
             color:#000;
         }
-        .section{ padding:110px 20px; }
+        .section{ padding:100px 20px; }
         .card{
             background:#0d2038;
             max-width:1000px;
             margin:auto;
-            padding:55px 45px;
+            padding:50px 40px;
             border-radius:20px;
             border:1px solid rgba(77,166,255,.25);
-            box-shadow: 0 0 25px rgba(77,166,255,.15);
+            box-shadow: 0 0 20px rgba(77,166,255,.15), 0 0 60px rgba(77,166,255,.05);
         }
         h2{
             text-align:center;
@@ -103,14 +103,29 @@
             font-size:52px;
             margin-bottom:40px;
             font-family:'Cinzel', serif;
+            letter-spacing:2px;
         }
-        p{ line-height:1.85; font-size:23px; }
+        p{ line-height:1.85; font-size:24px; }
         footer{
             margin-top:80px;
             background:#081b33;
             text-align:center;
-            padding:35px;
+            padding:40px;
             color:#9cb4d8;
+        }
+        #legend h2{ font-size:64px; margin-bottom:50px; }
+        .roadmap-item {
+            margin: 25px 0;
+            padding-left: 20px;
+            border-left: 3px solid #4da6ff;
+            position: relative;
+        }
+        .roadmap-item::before {
+            content: "●";
+            color: #D4AF37;
+            position: absolute;
+            left: -10px;
+            font-size: 20px;
         }
     </style>
 </head>
@@ -120,7 +135,7 @@
 <section class="hero" id="home">
     <img src="liena-logo.png" alt="LIENA Logo">
     <h1>FROM FORGOTTEN TO LEGENDARY</h1>
-    <p>We transform forgotten properties burdened with tax liens into legendary opportunities.</p>
+    <p>Transformamos propiedades olvidadas y gravadas con tax liens en oportunidades legendarias.</p>
     
     <div class="buttons">
         <a href="#legend" class="btn">THE LEGEND</a>
@@ -133,7 +148,7 @@
     </div>
 </section>
 
-<!-- Resto de secciones (puedes copiarlas de la versión anterior) -->
+<!-- Resto de secciones (Legend, What is a Lien, etc.) permanecen iguales -->
 
 </body>
 </html>
