@@ -2,131 +2,140 @@
 <html lang="en">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LIENA | From Forgotten To Legendary</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIENA | From Forgotten To Legendary</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        html{
+            scroll-behavior:smooth;
+        }
+        body{
+            font-family:'Cormorant Garamond', serif;
+            background: #0a1628;
+            color: #e8e8e8;
+        }
+        .hero{
+            width:100%;
+            min-height:100vh;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            padding:20px;
+        }
+        .hero img{
+            width:98%;
+            max-width:1800px;
+            border-radius:15px;
+            box-shadow:
+                0 0 25px rgba(77,166,255,.4),
+                0 0 80px rgba(77,166,255,.25);
+        }
+        .buttons{
+            position:fixed;
+            top:20px;
+            left:50%;
+            transform:translateX(-50%);
+            z-index:999;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:12px;
+            background:rgba(7,20,38,0.75);
+            padding:12px 18px;
+            border-radius:15px;
+            backdrop-filter:blur(10px);
+        }
+        .btn{
+            color:#4da6ff;
+            padding:10px 18px;
+            text-decoration:none;
+            border:1px solid #4da6ff;
+            border-radius:8px;
+            font-weight:bold;
+            transition:all .3s ease;
+            font-size:14px;
+        }
+        .btn:hover{
+            background:#4da6ff;
+            color:white;
+            box-shadow:0 0 20px #4da6ff;
+            transform:translateY(-3px);
+        }
+        .section{
+            padding:100px 20px;
+        }
+        .card{
+            background:#0d2038;
+            max-width:1000px;
+            margin:auto;
+            padding:50px 40px;
+            border-radius:20px;
+            border:1px solid rgba(77,166,255,.25);
+            box-shadow:
+                0 0 20px rgba(77,166,255,.15),
+                0 0 60px rgba(77,166,255,.05);
+        }
+        h2{
+            text-align:center;
+            color:#D4AF37;
+            font-size:52px;
+            margin-bottom:40px;
+            font-family:'Cinzel', serif;
+            letter-spacing:2px;
+            text-shadow:
+                0 0 10px rgba(212,175,55,.4),
+                0 0 20px rgba(212,175,55,.2);
+        }
+        p{
+            line-height:1.9;
+            font-size:24px;
+        }
+        footer{
+            margin-top:80px;
+            background:#081b33;
+            text-align:center;
+            padding:30px;
+            color:#9cb4d8;
+        }
+        #legend .card{
+            text-align:center;
+        }
+        #legend p{
+            max-width:850px;
+            margin:auto;
+        }
+        #legend h2{
+            font-size:64px;
+            margin-bottom:50px;
+        }
+    </style>
+</head>
+<body>
 
-<style>
+<section class="hero" id="home">
+    <img src="liena-logo.JPG" alt="LIENA">
+    <div class="buttons">
+        <a href="#legend" class="btn">THE LEGEND</a>
+        <a href="#lna" class="btn">LNA</a>
+        <a href="#roadmap" class="btn">ROADMAP</a>
+        <a href="#community" class="btn">COMMUNITY</a>
+        <a href="https://x.com" target="_blank" class="btn">X / TWITTER</a>
+    </div>
+</section>
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    body{
-    font-family:'Cormorant Garamond', serif;
-}
-
-.hero{
-    width:100%;
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    padding:20px;
-}
-
-.hero img{
-    width:98%;
-    max-width:1800px;
-    border-radius:15px;
-    box-shadow:
-        0 0 25px rgba(77,166,255,.4),
-        0 0 80px rgba(77,166,255,.25);
-}
-
-.buttons{
-    position:fixed;
-    top:20px;
-    left:50%;
-    transform:translateX(-50%);
-    z-index:999;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:12px;
-    background:rgba(7,20,38,0.75);
-    padding:12px 18px;
-    border-radius:15px;
-    backdrop-filter:blur(10px);
-}
-
-.btn{
-    color:#4da6ff;
-    padding:10px 18px;
-    text-decoration:none;
-    border:1px solid #4da6ff;
-    border-radius:8px;
-    font-weight:bold;
-    transition:all .3s ease;
-    font-size:14px;
-}
-
-.btn:hover{
-    background:#4da6ff;
-    color:white;
-    box-shadow:0 0 20px #4da6ff;
-    transform:translateY(-3px);
-}
-
-.section{
-    padding:100px 20px;
-}
-
-.card{
-    background:#0d2038;
-    max-width:1000px;
-    margin:auto;
-    padding:40px;
-    border-radius:20px;
-    border:1px solid rgba(77,166,255,.25);
-}
-
-h2{
-    h2{
-    text-align:center;
-    color:#D4AF37;
-    font-size:52px;
-    margin-bottom:30px;
-    font-family:'Cinzel', serif;
-    letter-spacing:2px;
-    text-shadow:
-        0 0 10px rgba(212,175,55,.4),
-        0 0 20px rgba(212,175,55,.2);
-}
-}
-
-p{
-p{
-    line-height:2;
-    font-size:24px;
-    font-family:'Cormorant Garamond', serif;
-}
-}
-
-footer{
-    margin-top:80px;
-    background:#081b33;
-    text-align:center;
-    padding:30px;
-    color:#9cb4d8;
-}
 <section class="section" id="legend">
     <div class="card">
         <h2>The Legend of LIENA</h2>
-        <p style="color: #e8e8e8; line-height: 1.9; font-size: 26px;">
-            Long ago there existed a noble property of timeless beauty.<br><br>
-            
-            Its gardens flourished with splendor, its halls were filled with life, and its future seemed eternal.<br><br>
+        <p style="color: #e8e8e8;">
+            Long ago there existed a noble property of timeless beauty. Its gardens flourished with splendor, its halls were filled with life, and its future seemed eternal.<br><br>
             
             But with the passing of years came neglect. Taxes went unpaid. Warnings were ignored. Slowly, what was once a symbol of prosperity fell into ruin and abandonment.<br><br>
             
@@ -156,195 +165,46 @@ footer{
     </div>
 </section>
 
-.card{
-    box-shadow:
-        0 0 20px rgba(77,166,255,.15),
-        0 0 60px rgba(77,166,255,.05);
-}
-    #legend .card{
-    text-align:center;
-}
-
-#legend p{
-    font-size:30px;
-    max-width:850px;
-    margin:auto;
-}
-
-#legend h2{
-    font-size:64px;
-    margin-bottom:50px;
-}
-
-.card{
-    box-shadow:
-        0 0 20px rgba(77,166,255,.15),
-        0 0 60px rgba(77,166,255,.05);
-}
-</style>
-</head>
-
-<body>
-
-<section class="hero" id="home">
-
-    <img src="liena-logo.JPG" alt="LIENA">
-
-    <div class="buttons">
-        <a href="#legend" class="btn">THE LEGEND</a>
-        <a href="#lna" class="btn">LNA</a>
-        <a href="#roadmap" class="btn">ROADMAP</a>
-        <a href="#community" class="btn">COMMUNITY</a>
-        <a href="https://x.com" target="_blank" class="btn">X / TWITTER</a>
-    </div>
-
-</section>
-
-<section class="section" id="legend">
-
-    <div class="card">
-
-        <h2>The Legend of LIENA</h2>
-
-        <p>
-
-        Long ago there was a beautiful property.
-
-        <br><br>
-
-        Its owner neglected the taxes, ignored the warnings,
-        and eventually lost everything.
-
-        <br><br>
-
-        The property became abandoned and forgotten.
-
-        <br><br>
-
-        People only saw problems.
-
-        People only saw debt.
-
-        People walked away.
-
-        <br><br>
-
-        Then came LIEN.
-
-        <br><br>
-
-        Where others saw decay,
-        LIEN saw opportunity.
-
-        <br><br>
-
-        The property was restored.
-
-        Rebuilt.
-
-        Reimagined.
-
-        <br><br>
-
-        And from that forgotten place,
-        LIENA was born.
-
-        </p>
-
-    </div>
-
-</section>
-
 <section class="section" id="lna">
-
     <div class="card">
-
         <h2>LNA</h2>
-
         <p>
-
-        Network: Base
-
-        <br><br>
-
-        Ticker: LNA
-
-        <br><br>
-
-        Supply: 500,000
-
-        <br><br>
-
-        Community • Education • Transparency
-
+            Network: Base<br><br>
+            Ticker: LNA<br><br>
+            Supply: 500,000<br><br>
+            Community • Education • Transparency
         </p>
-
     </div>
-
 </section>
 
 <section class="section" id="roadmap">
-
     <div class="card">
-
         <h2>Roadmap</h2>
-
         <p>
-
-        Phase 1 — Website Launch
-
-        <br><br>
-
-        Phase 2 — Community Growth
-
-        <br><br>
-
-        Phase 3 — Hall Of Legends
-
-        <br><br>
-
-        Phase 4 — The Furnace
-
-        <br><br>
-
-        Phase 5 — Ecosystem Expansion
-
+            Phase 1 — Website Launch<br><br>
+            Phase 2 — Community Growth<br><br>
+            Phase 3 — Hall Of Legends<br><br>
+            Phase 4 — The Furnace<br><br>
+            Phase 5 — Ecosystem Expansion
         </p>
-
     </div>
-
 </section>
 
 <section class="section" id="community">
-
     <div class="card">
-
         <h2>Community</h2>
-
         <p>
-
-        LIENA is more than a token.
-
-        <br><br>
-
-        It is a community focused on education,
-        transparency, and long-term vision.
-
-        <br><br>
-
-        Join us as we transform forgotten value
-        into legendary opportunity.
-
+            LIENA is more than a token.<br><br>
+            It is a community focused on education,<br>
+            transparency, and long-term vision.<br><br>
+            Join us as we transform forgotten value<br>
+            into legendary opportunity.
         </p>
-
     </div>
-
 </section>
 
 <footer>
-
     LIENA © 2026
-
 </footer>
 
 </body>
