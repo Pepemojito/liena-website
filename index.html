@@ -6,11 +6,14 @@
 <title>LIENA | From Forgotten To Legendary</title>
 
 <style>
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
@@ -23,27 +26,44 @@ body{
     width:100%;
     min-height:100vh;
     display:flex;
+    flex-direction:column;
     justify-content:center;
     align-items:center;
     padding:20px;
 }
 
 .hero img{
-    .hero img{
     width:98%;
     max-width:none;
     border-radius:12px;
-<div class="buttons">
-    <a href="#legend" class="btn">THE LEGEND</a>
-    <a href="#roadmap" class="btn">ROADMAP</a>
-    <a href="#community" class="btn">COMMUNITY</a>
-    <a href="https://x.com" class="btn">X / TWITTER</a>
-</div>
-        
-}
     box-shadow:
         0 0 20px rgba(77,166,255,.3),
         0 0 60px rgba(77,166,255,.2);
+}
+
+.buttons{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin-top:30px;
+}
+
+.btn{
+    background:#0b2c55;
+    color:#4da6ff;
+    padding:15px 30px;
+    text-decoration:none;
+    border:2px solid #4da6ff;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#4da6ff;
+    color:white;
+    box-shadow:0 0 20px #4da6ff;
 }
 
 .section{
@@ -78,116 +98,111 @@ footer{
     padding:30px;
     color:#9cb4d8;
 }
-
 </style>
-    .buttons{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:15px;
-    margin-top:30px;
-}
-
-.btn{
-    background:#0b2c55;
-    color:#4da6ff;
-    padding:15px 30px;
-    text-decoration:none;
-    border:2px solid #4da6ff;
-    border-radius:10px;
-    font-weight:bold;
-    transition:0.3s;
-}
-
-.btn:hover{
-    background:#4da6ff;
-    color:white;
-    box-shadow:0 0 20px #4da6ff;
-}
 </head>
 
 <body>
 
-<section class="hero">
+<section class="hero" id="home">
 
     <img src="liena-logo.JPG" alt="LIENA">
 
+    <div class="buttons">
+        <a href="#legend" class="btn">THE LEGEND</a>
+        <a href="#lna" class="btn">LNA</a>
+        <a href="#roadmap" class="btn">ROADMAP</a>
+        <a href="#community" class="btn">COMMUNITY</a>
+        <a href="https://x.com" class="btn" target="_blank">X / TWITTER</a>
+    </div>
+
 </section>
 
-<section class="section">
+<section class="section" id="legend">
 
     <div class="card">
 
         <h2>The Legend of LIENA</h2>
 
-        
         <p>
-
         Long ago there was a beautiful property.
+        <br><br>
 
         Its owner neglected the taxes, ignored the warnings,
         and eventually lost everything.
-
         <br><br>
 
         The property became abandoned and forgotten.
+        <br><br>
 
-        People only saw problems.
-
-        People only saw debt.
-
-        People walked away.
-
+        People only saw problems. People only saw debt. People walked away.
         <br><br>
 
         Then came LIEN.
-
         <br><br>
 
-        Where others saw decay,
-        LIEN saw opportunity.
-
+        Where others saw decay, LIEN saw opportunity.
         <br><br>
 
-        The property was restored.
-
-        Rebuilt.
-
-        Reimagined.
-
+        The property was restored. Rebuilt. Reimagined.
         <br><br>
 
-        And from that forgotten place,
-        LIENA was born.
-
+        And from that forgotten place, LIENA was born.
         </p>
 
     </div>
 
 </section>
 
-<section class="section">
+<section class="section" id="lna">
 
     <div class="card">
 
         <h2>LNA</h2>
 
         <p>
-
         Network: Base
-
         <br><br>
-
         Ticker: LNA
-
         <br><br>
-
         Supply: 500,000
-
         <br><br>
-
         Community • Education • Transparency
+        </p>
 
+    </div>
+
+</section>
+
+<section class="section" id="roadmap">
+
+    <div class="card">
+
+        <h2>Roadmap</h2>
+
+        <p>
+        Phase 1: Website, identity, and community foundation.
+        <br><br>
+        Phase 2: Hall of Legends, community recognition, and educational content.
+        <br><br>
+        Phase 3: Furnace concept, transparency dashboard, and ecosystem initiatives.
+        <br><br>
+        Phase 4: Community governance and future LNA expansion.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="section" id="community">
+
+    <div class="card">
+
+        <h2>Community</h2>
+
+        <p>
+        LIENA is being built around education, transparency, and community participation.
+        <br><br>
+        Official community links will be added here.
         </p>
 
     </div>
@@ -195,10 +210,13 @@ footer{
 </section>
 
 <footer>
-
     LIENA © 2026
-
 </footer>
 
 </body>
 </html>
+   
+
+  
+
+        
